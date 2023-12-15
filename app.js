@@ -4,6 +4,6 @@ const port = process.env.PORT;
 
 app.listen(port);
 
-app.post('/manychat-webhook', (req, res) => {
+app.post('/manychat', (req, res) => {
   res.json({ message: 'This is the simplest version!' });
 });

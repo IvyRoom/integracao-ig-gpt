@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1a2f6756-eaa5-4654-bc88-a69e5e588846/resourceGroups/integracao-ig-gpt-ResourceGroup/providers/Microsoft.Web/sites/integracao-ig-gpt",
+    "appService.deploySubpath": "."
+}

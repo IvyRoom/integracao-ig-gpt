@@ -53,4 +53,4 @@ jobs:
           app-name: 'integracao-ig-gpt'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E27A624FBBA4E0DBB368E0D4D5C0854 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_69DA655741A4490FA656CFD6BB29D668 }}

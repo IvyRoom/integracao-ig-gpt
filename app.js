@@ -10,8 +10,11 @@
 import { Connection, Request } from 'tedious';
 
 // Importa a biblioteca da OpenAI e gera a conexão com o API.
+import dotenv from 'dotenv';
+dotenv.config();
+
 import OpenAI from "openai";
-const apiKey = "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";
+const apiKey = process.env.API_KEY;
 const openai = new OpenAI({apiKey});
 var Thread_ID_OpenAI;
 

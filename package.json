@@ -15,7 +15,7 @@
     "tedious": "^16.6.1"
   },
   "engines": {
-    "node": "20.5.0",
+    "node": "20.9.0",
     "npm": "9.8.1"
   },
   "main": "app.js",

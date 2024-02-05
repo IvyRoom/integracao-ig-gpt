@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.mjs"
   },
   "dependencies": {
     "@microsoft/applicationinsights-web": "^3.0.7",
@@ -18,10 +18,9 @@
     "node": "20.9.0",
     "npm": "9.7.2"
   },
-  "main": "app.js",
+  "main": "app.mjs",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "type": "module"
+  "description": ""
 }

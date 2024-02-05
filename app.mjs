@@ -46,7 +46,7 @@ app.use(express.json());
 app.post('/manychat-webhook/:VariaveisConsolidadas', (req, res) => {    
  
     // Retorna mensagem de sucesso à request.
-    res.status(200).send('Mensagem recebida pelo app.js com sucesso.');
+    res.status(200).send('Mensagem recebida pelo app.mjs com sucesso.');
     
     // Define as variáveis extraídas da DM.
     const MensagemEntrada_VariaveisConsolidadas = req.params.VariaveisConsolidadas;

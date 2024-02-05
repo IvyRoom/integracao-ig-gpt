@@ -7,13 +7,16 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Importa a biblioteca de conexão com o servidor e base de dados do Azure.
-import { Connection, Request } from 'tedious';
+//import { Connection, Request } from 'tedious';
+const { Connection, Request } = require('tedious');
 
 // Importa a biblioteca da OpenAI e gera a conexão com o API.
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
-import OpenAI from "openai";
+//import OpenAI from "openai";
+const OpenAI = require('openai');
 const apiKey = process.env.API_KEY;
 const openai = new OpenAI({apiKey});
 var Thread_ID_OpenAI;
@@ -35,7 +38,8 @@ var config = {
 };
 
 // Cria "POST Endpoint" no servidor para receber a DM vinda do ManyChat.
-import express from 'express';
+//import express from 'express';
+const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -655,7 +659,8 @@ No link da bio (Landing Page) da Ivy há:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Importa a biblioteca necessária para fazer os HTTP POST ao ManyChat e configura a conexão.
-import axios from 'axios';
+//import axios from 'axios';
+const axios = require('axios');
 const url = 'https://api.manychat.com/fb/subscriber/setCustomField';
 const headers = {
   'accept': 'application/json',

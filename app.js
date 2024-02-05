@@ -221,7 +221,7 @@ function Controla_Execução_Runs_OpenAI(MensagemEntrada_ManyChatSubscriberID, M
 
   if (HoraAtual_Servidor >= 8 && HoraAtual_Servidor < 20) {
 
-    Tempo_até_Execução_Run = 300000; // 5min.
+    Tempo_até_Execução_Run = 15000; // 15s.
 
   } else {
     
@@ -279,6 +279,8 @@ Conforme sua avaliação do contexto da conversa, a cada run você deve retornar
 - O nível de interesse do PA, conforme Item 1.4.2.2.
 - Uma data para retomar contato com o PA, caso ele não lhe dê retorno.
 - Um alerta, caso necessário, que será encaminhado à gerência da Ivy. 
+
+1.3.1 ESQUEMA JSON
 Seu retorno deve sempre seguir este exemplo de Esquema JSON:
 {
 "mensagem_1": "Certo, Maurício.",
@@ -290,6 +292,7 @@ Seu retorno deve sempre seguir este exemplo de Esquema JSON:
 "data_retomada": "17/jan/2024",
 "alerta": "O PA tem uma dúvida para a qual não tenho informações atualizadas."
 }
+E deve conter apenas as chaves {} e o conteúdo interno a elas. Nunca inclua caracteres especiais (como crases, apóstrofos ou aspas) ou a palavra “json” antes ou depois das chaves.
 
 1.4 MENSAGENS
 Suas mensagens devem ter até 1000 caracteres. 

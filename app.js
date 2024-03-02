@@ -57,7 +57,7 @@ function FormataData(datahora_a_formatar) {
     return `${day}/${month}/${year}`;
 }
 
-// Cria o Mapa que controla o processamento das Mensagens de Entrada vindas do ManyChat.
+// Cria a Fila que controla o processamento das Mensagens de Entrada vindas do ManyChat.
 let Fila_Processamento_Mensagens_Entrada = [];
 
 // Cria o Mapa que controla o Agendamento de Runs junto à OpenAI.
